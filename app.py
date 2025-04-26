@@ -31,4 +31,4 @@ elif conversion_type == "weight (grams to kilograms)":
 
 elif conversion_type == "Temprature (celsius to fahrenheit)":
   result = (number * 9/5) + 32
-  st.write(f"{number} °C is {result} °F. ")
+  st.write(f"{number} C is {result} F. ")
