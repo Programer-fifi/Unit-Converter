@@ -15,7 +15,7 @@ st.title ("Unit Converter")
 
 conversion_type = st.selectbox(
     "Choose Conversion Type",
-    ("Length (meters to kilometers)", "weight (grams to kilograms)", "Temprature ( Celsius to Fahrenheit)")
+    ("Length (meters to kilometers)", "weight (grams to kilograms)", "Temperature ( Celsius to Fahrenheit)")
 
 )
 
@@ -29,6 +29,7 @@ elif conversion_type == "weight (grams to kilograms)":
   result = number / 1000
   st.write(f"{number} grams is {result} kilograms.")
 
-elif conversion_type == "Temprature (celsius to fahrenheit)":
+elif conversion_type == "Temperature (Celsius to Fahrenheit)":
   result = (number * 9/5) + 32
-  st.write(f"{number} C is {result} F. ")
+st.write(f"{number} °C is {result} °F.")
+
