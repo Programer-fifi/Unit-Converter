@@ -11,26 +11,23 @@ Original file is located at
 
 import streamlit as st
 
-st.title ("Unit Converter")
+st.title("Unit Converter")
 
 conversion_type = st.selectbox(
     "Choose Conversion Type",
-    ("Length (meters to kilometers)", "weight (grams to kilograms)", "Temperature ( Celsius to Fahrenheit)")
-
+    ("Length (meters to kilometers)", "Weight (grams to kilograms)", "Temperature (Celsius to Fahrenheit)")
 )
 
 number = st.number_input("Enter the value you want to convert:")
 
 if conversion_type == "Length (meters to kilometers)":
-  result = number / 1000
-  st.write(f"{number} meters is {result} kilometers.")
+    result = number / 1000
+    st.write(f"{number} meters is {result} kilometers.")
 
-elif conversion_type == "weight (grams to kilograms)":
-  result = number / 1000
-  st.write(f"{number} grams is {result} kilograms.")
+elif conversion_type == "Weight (grams to kilograms)":
+    result = number / 1000
+    st.write(f"{number} grams is {result} kilograms.")
 
 elif conversion_type == "Temperature (Celsius to Fahrenheit)":
     result = (number * 9/5) + 32
     st.write(f"{number} °C is {result} °F.")
-
-
